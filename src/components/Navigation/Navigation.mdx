@@ -1,0 +1,19 @@
+---
+name: Navigation
+menu: Header
+---
+
+import { Playground } from 'docz'
+import { ThemeProvider } from 'styled-components'
+import Navigation from './index'
+import theme from 'src/styles/theme.styled'
+import global from 'src/styles/global.styled'
+
+## Basic usage
+<Playground>
+  <ThemeProvider theme={theme} >
+    <div>
+      <Navigation />
+    </div>
+  </ThemeProvider>
+</Playground>

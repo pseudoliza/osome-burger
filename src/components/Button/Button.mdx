@@ -1,0 +1,30 @@
+---
+name: Button
+menu: Components
+---
+
+import { Playground } from 'docz'
+import { ThemeProvider } from 'styled-components'
+import { StyledButton, StyledButtonSmall, StyledButtonOutline, StyledButtonSmallOutline } from './Button.styled'
+import theme from 'src/styles/theme.styled'
+import global from 'src/styles/global.styled'
+
+## Basic usage
+<Playground style={{ backgroundColor: 'rgb(247, 247, 247)' }} >
+  <ThemeProvider theme={theme} >
+    <div>
+      <StyledButton>
+        Button
+      </StyledButton>
+      <StyledButtonOutline>
+        Button Outline
+      </StyledButtonOutline>
+      <StyledButtonSmall>
+        Button Small
+      </StyledButtonSmall>
+      <StyledButtonSmallOutline>
+        Button Outline Small
+      </StyledButtonSmallOutline>
+    </div>
+  </ThemeProvider>
+</Playground>
